@@ -1,0 +1,39 @@
+<%= form_with(model: @user, local: true) do |f| %>
+  
+  <div class="container">
+  <div class="container-email">
+   <div class="wrap-email">
+    <form class="email-form">
+      <span class="email-form-title">Cadastre-se:</span>
+          
+      
+          <div class="wrap-input">
+            <%= f.label :username , class:"label"%><br/>
+            <%= f.text_field :username, placeholder: "Username", class: "campo" %>
+          
+          
+            <%= f.label :email , class:"label" %><br/>
+            <%= f.email_field :email, placeholder: "Email", class: "campo" %>
+          
+          
+            <%= f.label :password , class:"label"%><br/>
+            <%= f.password_field :password, placeholder: "Password", class: "campo" %>
+        
+          
+            <div class="container-email-form-btn">
+            <%= f.submit "Signup", class: "email-form-btn" %>
+            <div class="text-center">
+
+  <% end %>
+  <span class="txt1">Ja possui conta?</span>
+  <%= link_to 'Entre aqui','/login', class:"txt2" %>
+
+    </div>
+  </div>
+</div>
+
+</form>
+
+</div>
+</div>
+</div>
