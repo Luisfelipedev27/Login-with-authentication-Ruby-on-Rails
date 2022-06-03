@@ -4,8 +4,8 @@ MYsql 8.0
 
 gems :
 
-Bcrypt
-Rspec-rails
+Bcrypt,
+Rspec-rails.
 
 Login com Autenticação e alguns testes realizados utilizando RSpec/TDD.
 App integrado com mysql. Front bem estilizado e back bem construído.
